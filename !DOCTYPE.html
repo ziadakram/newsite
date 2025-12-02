@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🌾 Farm Management Dashboard</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="expenses.html">Expenses</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="feed.html">Feed Consumption</a>
+            <a href="records.html">Farm Records</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="overview">
+            <h2>📊 Farm Overview</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Expenses</h3>
+                    <p id="totalExpense">₹0</p>
+                </div>
+                <div class="card">
+                    <h3>Employees Present</h3>
+                    <p id="empPresent">0</p>
+                </div>
+                <div class="card">
+                    <h3>Feed Used (kg)</h3>
+                    <p id="feedUsed">0 kg</p>
+                </div>
+                <div class="card">
+                    <h3>Tasks Pending</h3>
+                    <p id="tasksPending">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts">
+            <h2>📈 Monthly Trends</h2>
+            <div id="expenseChart" style="width: 100%; height: 400px;"></div>
+        </section>
+
+        <section class="quick-add">
+            <h2>➕ Quick Add Entry</h2>
+            <form id="quickForm">
+                <input type="text" placeholder="Item/Activity" required>
+                <input type="number" placeholder="Cost (₹)" required>
+                <select>
+                    <option>Expense</option>
+                    <option>Feed</option>
+                    <option>Labor</option>
+                </select>
+                <button type="submit">Add Record</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Farm Management System | Made for Agri-Projects</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
